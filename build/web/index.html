@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <!--
+    If you are serving your web app in a path other than the root, change the
+    href value below to reflect the base path you are serving from.
+
+    The path provided below has to start and end with a slash "/" in order for
+    it to work correctly.
+
+    For more details:
+    * https://developer.mozilla.org/en-US/docs/Web/HTML/Element/base
+
+    This is a placeholder for base href that will be replaced by the value of
+    the `--base-href` argument provided to `flutter build`.
+  -->
+  <base href="/">
+
+  <meta charset="UTF-8">
+  <meta content="IE=Edge" http-equiv="X-UA-Compatible">
+  <meta name="description" content="This is a website for E-Learning lean six sigma courses.">
+
+  <!-- iOS meta tags & icons -->
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="apple-mobile-web-app-title" content="Lean six sigma E-Learning Plateform">
+  <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+
+  <link rel="apple-touch-icon" href="icons/Icon-192.png">
+
+  <!-- Favicon -->
+  <link rel="Shortcut icon" type="image/x-icon" href="favicon.ico"/>
+  <link rel="icon" type="image/x-icon" href="favicon.ico"/>
+
+
+
+
+  <title>Lean six sigma E-Learning Plateform</title>
+  <link rel="manifest" href="manifest.json">
+  
+  
+
+  <script>
+    // The value below is injected by flutter build, do not touch.
+    var serviceWorkerVersion = "4020153598";
+  </script>
+  <!-- This script adds the flutter initialization JS code -->
+  <script src="flutter.js" defer></script>
+</head>
+<body>
+  <script>
+    window.addEventListener('load', function(ev) {
+      // Download main.dart.js
+      _flutter.loader.loadEntrypoint({
+        serviceWorker: {
+          serviceWorkerVersion: serviceWorkerVersion,
+        },
+        onEntrypointLoaded: function(engineInitializer) {
+          engineInitializer.initializeEngine().then(function(appRunner) {
+            appRunner.runApp();
+          });
+        }
+      });
+    });
+  </script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/pdf.js/2.11.338/pdf.min.js"></script>
+  <script type="text/javascript">
+     pdfjsLib.GlobalWorkerOptions.workerSrc = "//cdnjs.cloudflare.com/ajax/libs/pdf.js/2.11.338/pdf.worker.min.js";
+  </script>
+
+<script
+src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAMi9cWfG0jdiJbkapl-gY1u4ofZr0jucc&libraries=drawing,visualization,places">
+</script>
+  <script type="module">
+    // Import the functions you need from the SDKs you need
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-app.js";
+    import { getAnalytics } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-analytics.js";
+    // TODO: Add SDKs for Firebase products that you want to use
+    // https://firebase.google.com/docs/web/setup#available-libraries
+  
+    // Your web app's Firebase configuration
+    // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+    const firebaseConfig = {
+      apiKey: "AIzaSyDJAsrBYcZ95gbT2NlNiTcVgvUn_iEHJoU",
+      authDomain: "ecommerce-7eac3.firebaseapp.com",
+      projectId: "ecommerce-7eac3",
+      storageBucket: "ecommerce-7eac3.appspot.com",
+      messagingSenderId: "260010400013",
+      appId: "1:260010400013:web:cae286c0dd8e31b0beb844",
+      measurementId: "G-08BS1K739W"
+    };
+  
+    // Initialize Firebase
+    const app = initializeApp(firebaseConfig);
+    const analytics = getAnalytics(app);
+  </script>
+  <script type="text/javascript">
+    window.flutterWebRenderer = "html";
+</script>
+</body>
+</html>
